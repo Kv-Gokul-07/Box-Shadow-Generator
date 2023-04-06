@@ -1,0 +1,25 @@
+.custom_section.textShadow_section {
+    .grid_container {
+        .right_column {
+            .display_box {
+                flex-direction: column;
+                justify-content: center;
+                .text_content {
+                    min-height: 10vh;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;              
+                    min-width: 100%;
+                    background-color: #ffffff;
+                    border-radius: 0.3125rem;
+                    border: 1px solid #000000;
+                    margin-bottom: 5vh;
+                    z-index: 2;
+                }
+                .result_content {
+                    min-height: 10vh;
+                }
+            }
+        }
+    }
+}

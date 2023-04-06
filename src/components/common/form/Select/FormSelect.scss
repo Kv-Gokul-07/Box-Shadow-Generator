@@ -1,0 +1,132 @@
+.Select {
+    width: 100%;
+      svg {
+    position: absolute;
+    right: 0%;
+    margin-right: 0.75rem;
+    background-color: transparent;
+    width: 1.25rem;
+    height: 1.25rem;
+    top: 50%;
+    transform: translate(0px, -50%);
+  }
+
+    .MuiFormControl-root {
+    .FormSelect {
+     border-radius: .3125rem;
+      display: flex;
+      align-items: center;
+      height: 30px;
+      font-weight: 500;
+      font-size: 1rem;
+      color: #000000;
+      border: 1px solid rgb(206, 212, 220);
+      background-color: #ffffff;
+      color: grey;
+      box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.06);
+      .MuiSelect-nativeInput {
+        min-height: 2.5rem;
+      }
+    }
+
+    .MuiSelect-select {
+      padding: 0 1rem;
+    }
+  }
+
+  .MuiOutlinedInput-notchedOutline {
+    border: 0px;
+  }
+}
+
+
+// .Select {
+//   width: 9.375rem;
+//   margin-bottom: 1rem;
+//   svg {
+//     position: absolute;
+//     right: 0%;
+//     margin-right: 0.75rem;
+//     background-color: transparent;
+//     width: 1.25rem;
+//     height: 1.25rem;
+//     top: 50%;
+//     transform: translate(0px, -50%);
+//     &.MuiSelect-iconOpen {
+//       background-color: #e8eeff;
+//       border-radius: 7px;
+//       width: 1.25rem;
+//       height: 1.25rem;
+//       fill: $mediumBlue;
+//     }
+//   }
+
+//   .Mui-focused {
+//     svg {
+//       background-color: #e8eeff;
+//       border-radius: 7px;
+//       width: 1.25rem;
+//       height: 1.25rem;
+//       fill: $mediumBlue;
+//     }
+//   }
+
+//   .MuiFormControl-root {
+//     .FormSelect {
+//       @include border-radius(0.3125rem);
+//       @include display;
+//       @include align;
+//       height: 2.5rem;
+//       font-weight: 500;
+//       font-size: 1rem;
+//       color: #000000;
+//       background-color: #f4f7ff;
+//       color: $light_grey;
+//       box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.06);
+//       .MuiSelect-nativeInput {
+//         min-height: 2.5rem;
+//       }
+//     }
+
+//     .MuiSelect-select {
+//       padding: 0 1rem;
+//     }
+//   }
+
+//   .MuiOutlinedInput-notchedOutline {
+//     border: 0px;
+//   }
+// }
+
+// .MuiPopover-root.MuiMenu-root {
+//   [class*="-paper"] {
+//     box-shadow: 0 calcVh(4) calcVh(15) rgba(74, 74, 74, 0.202961) !important;
+//     border-radius: 5px !important;
+//     border: solid 1px $border-color !important;
+//     // height: 300px;
+//     // top: 75px !important;
+//     //border-bottom-left-radius: 0;
+//   }
+
+//   [class*="-root"][class*="-list"] {
+//     padding: 0px;
+//     li {
+//       min-height: 1.875rem;
+//       font-size: .75rem;
+//       color: #565656;
+//       background-color: $variable_color_1;
+//       &[class*="-selected"],
+//       &:hover,
+//       &:focus {
+//         background-color: $mediumBlue;
+//         color: white;
+//         @include border-radius(7px);
+//         box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
+//         &:hover {
+//           background-color: $mediumBlue;
+//           color: white;
+//         }
+//       }
+//     }
+//   }
+// }

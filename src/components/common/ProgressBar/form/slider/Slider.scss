@@ -1,0 +1,29 @@
+.form_slider {
+  width: 100%;
+  .MuiSlider-root {
+    height: 7px;
+    color: rgb(244, 244, 244);
+
+    .MuiSlider-rail {
+      border: 1px solid rgb(180, 180, 180);
+      opacity: 1;
+    }
+    .MuiSlider-track {
+      border: 1px solid rgb(180, 180, 180);
+      opacity: 1;
+    }
+
+    .MuiSlider-thumb {
+      border-radius: 0.3125rem;
+      border: 1px solid;
+      width: 25px;
+      height: 25px;
+      border: 1px solid rgba(0, 0, 0, 0.25);
+      &.Mui-active,
+      &:hover,
+      &.Mui-focusVisible {
+        box-shadow: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,54 @@
+.cssCursor_section {
+    .result_content {
+        min-height: 10vh;
+        background-color: rgba(218, 216, 216, 0.696);
+        border-radius: 0.625rem;
+        width: 300px;
+        margin: auto;
+        margin-top: 4rem;
+        text-align: center;
+        border-radius: 0.3125rem;
+        border: 1px solid #000000;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0rem 2rem;
+        .textCopy_icon {
+          position: absolute;
+          right: 0.3125rem;
+          top: 0.625rem;
+        }
+        h6 {
+          line-height: 1.25rem;
+        }
+      }
+
+      .cursor_list {
+        margin-top: 4rem;
+        flex-wrap: wrap;
+        .cursor_type {
+            display: flex;
+            align-items: center;
+            min-width: 12.5rem;
+            max-width: 12.5rem;
+            padding: 1rem 2rem;
+            margin-bottom: 2rem;
+            border: 1px solid #000000;
+            border-radius: .3125rem;
+            h5 {
+                text-align: center;
+                width: 100%;
+            }
+            &:hover {
+                background-color: 	rgb(25,140,186);
+                color: white;
+            }
+            &.cursorActive {
+                background-color: 	rgb(25,140,186); 
+                color: white;
+            }
+          }
+      }
+
+}

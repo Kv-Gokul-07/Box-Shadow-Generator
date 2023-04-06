@@ -1,0 +1,115 @@
+
+
+head {
+  overflow: hidden;
+}
+
+body {
+  overflow: overlay;
+}
+
+body,
+html {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: #000000;
+  // background-color:  #f8fbff;;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+// a,
+// .anchor {
+//   text-decoration: none;
+//   color: #000000;
+
+//   &:hover {
+//     color: #ac9657;
+//   }
+// }
+
+[role="presentation"] {
+  cursor: pointer;
+}
+
+.icon_large {
+  font-size: 2rem !important;
+}
+
+.custom_section {
+  padding-top: 15vh;
+  .title {
+      text-align: center;
+  }
+
+  .colorPicker_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    .MuiFormControl-root {
+      width: 200px;
+      .MuiInputBase-root {
+        height: 30px;
+        .MuiInputAdornment-root {
+          button {
+            width: 20px;
+            height: 20px;
+          }
+        }
+        
+      }
+    }
+  }
+}
+
+.custom_section {
+    .grid_container {
+        .custom_colum {
+            &.right_column {
+                flex-direction: column;
+                justify-content:flex-start;
+                align-items: center;
+                .result_content {
+                    margin-top: 10vh;
+                    min-height: 15vh;
+                    min-width: 500px;
+                    background-color: #ffffff;
+                    border-radius: 0.3125rem;
+                    border: 1px solid #000000;
+                    position: relative;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    padding: 0rem 2rem;
+                    .textCopy_icon {
+                        position: absolute;
+                        right: 20px;
+                        top: 10px;
+                    }
+                }
+            }
+        }
+  
+    }
+}

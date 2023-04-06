@@ -1,0 +1,43 @@
+.input_form {
+  width: 100%;
+  .MuiFormControl-root {
+
+    .MuiFormLabel-root {
+      display: none;
+    }
+    .MuiInputBase-root {
+      height: 1.875rem;
+
+      &::before {
+        border: 1px solid #000000;
+        height: 100%;
+        border-radius: 5px;
+      }
+
+      &::after {
+        border: 0px;
+      }
+    }
+    &.Mui-focused {
+      color: #000000;
+      .MuiInputBase-root {
+        background-color: transparent;
+      }
+    }
+
+    fieldset {
+      height: 100%;
+      top: 0px;
+      border: 0px;
+      legend {
+        display: none;
+      }
+    }
+  }
+
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+}
