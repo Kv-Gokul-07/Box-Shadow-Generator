@@ -13,6 +13,8 @@ const Option = ({ label, name, min, max, step, optType }) => {
       return <sub className="degree_sub">o</sub>
       case "px":
       return "px"
+      case "per":
+        return "%"
       default:
       return value
   }

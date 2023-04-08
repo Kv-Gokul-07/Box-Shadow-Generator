@@ -39,7 +39,7 @@ const FormSelect = ({field, ...props}) => {
                     className={`FormSelect`}
                     value={value}
                     name={name}
-                    label="Age"
+                    // label="Age"
                     onChange={onChange}
                     IconComponent={(props) =>  dropDownIcons(dropDownIon, {props})}
 

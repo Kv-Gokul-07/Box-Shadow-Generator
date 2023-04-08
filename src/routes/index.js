@@ -11,6 +11,8 @@ const CSSCursor = lazy(() => import(`../pages/CssCursor/CssCursor`));
 const BorderRadius = lazy(() => import(`../pages/BorderRadius/BorderRadius`));
 const Border = lazy(() => import(`../pages/Border/Border`));
 const Transform = lazy(() => import(`../pages/Transform/Transform`));
+const LinearGradient = lazy(() => import(`../pages/LinearGradient/LinearGradient`));
+const ColorOptions = lazy(() => import(`../pages/ColorOptions/ColorOptions`));
 
 
 function AppRoutes() {
@@ -31,6 +33,9 @@ function AppRoutes() {
           <Route exact path="/border-radius" element={<BorderRadius />} />
           <Route exact path="/border" element={<Border />} />
           <Route exact path="/transform" element={<Transform />} />
+          <Route exact path="/linear-gradient" element={<LinearGradient />} />
+          <Route exact path="/color-options" element={<ColorOptions />} />
+
         {/* //  <Route path="*" element={<PageNotFound />}/> */}
         </Routes>
       </Router>

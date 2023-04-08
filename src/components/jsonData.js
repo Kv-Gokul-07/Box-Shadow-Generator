@@ -28,6 +28,16 @@ export const navList = [
     id: "6",
     label: "Transform",
     path: "/transform",
+  },
+  {
+    id: "7",
+    label: "Linear Gradient",
+    path: "/linear-gradient",
+  },
+  {
+    id: "8",
+    label: "Color Options",
+    path: "/color-options",
   }
 ];
 
@@ -228,5 +238,85 @@ export const borderType = [
   {
     id: "hidden",
     value: "hidden",
+  }
+]
+
+
+//Oreintation
+export const orentation = [
+  {
+    id: "linear",
+    value: "linear",
+  },
+  {
+    id: "radial",
+    value: "Radial",
+  },
+  {
+    id: "elliptical",
+    value: "Elliptical",
+  },
+  {
+    id: "repeat linear",
+    value: "Repeat linear",
+  },
+  {
+    id: "repeat radial",
+    value: "Repeat Radial",
+  },
+  {
+    id: "repeat elliptical",
+    value: "Repeat Elliptical",
+  }
+]
+
+//Oreintation
+export const Size = [
+  {
+    id: "farthest-side",
+    value: "farthest-side",
+  },
+  {
+    id: "farthest-corner",
+    value: "farthest-corner",
+  }
+]
+
+export const Position = [
+  {
+    id: "top left",
+    value: "top left",
+  },
+  {
+    id: "top center",
+    value: "top center",
+  },
+  {
+    id: "top right",
+    value: "top right",
+  },
+  {
+    id: "left right",
+    value: "left right",
+  },
+  {
+    id: "center center",
+    value: "center center",
+  },
+  {
+    id: "right center",
+    value: "right center",
+  },
+  {
+    id: "bottom left",
+    value: "bottom left",
+  },
+  {
+    id: "bottom center",
+    value: "bottom center",
+  },
+  {
+    id: "bottom right",
+    value: "bottom right",
   }
 ]

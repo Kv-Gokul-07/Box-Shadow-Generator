@@ -12,6 +12,9 @@
   }
 
     .MuiFormControl-root {
+      .MuiFormLabel-root {
+        display: none;
+      }
     .FormSelect {
      border-radius: .3125rem;
       display: flex;
