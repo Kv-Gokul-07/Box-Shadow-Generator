@@ -12,7 +12,7 @@ import "./Input.scss";
 
 
 const Input = ({field, type,...props}) => {
- const { name, onChange, onBlur, value, id } = field;
+ const { name, onChange, onBlur, value } = field;
  const {autoFocus, multiline, placeholder, label, validate, touchedError, disabled, row, maxLength, min, max, adorment, textTransform, required, frontadorment, medium, small} = props;
 
  const Icon = {

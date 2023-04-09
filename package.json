@@ -1,6 +1,5 @@
 {
   "name": "box-shadow-generator",
-  "homepage": "http://kv-Gokul-07.github.io/Box-Shadow-Generator",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
