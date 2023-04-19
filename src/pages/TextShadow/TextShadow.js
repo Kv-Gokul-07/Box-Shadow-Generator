@@ -5,10 +5,10 @@ import ContentCopyOutlinedIcon from "@mui/icons-material/ContentCopyOutlined";
 import { Form, Formik } from "formik";
 import "react-color-palette/lib/css/styles.css";
 import Option from "../../components/common/option/Option";
-import "../BoxShadow/BoxShadow.scss";
-import "./TextShadow.scss";
 import AppLayout from "../../components/layout/AppLayout";
 import { MuiColorInput } from "mui-color-input";
+
+import "./TextShadow.scss";
 
 const TextShadow = () => {
   const [color, setColor] = React.useState("#121212");
@@ -62,7 +62,7 @@ const TextShadow = () => {
                       </Box>
                     </Form>
                   </Grid>
-                  <Grid item xs={7} className="right_column custom_colum">
+                  <Grid item xs={7} pl={5} className="right_column custom_colum">
                     <Box className="display_box">
                       <Box className="text_content">
                         <Typography

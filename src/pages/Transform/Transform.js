@@ -79,7 +79,7 @@ const Transform = () => {
                       />
                     </Form>
                   </Grid>
-                  <Grid item xs={7} className="right_column custom_colum">
+                  <Grid item xs={7} pl={5} className="right_column custom_colum">
                     <Box
                       className="display_box"
                       style={{

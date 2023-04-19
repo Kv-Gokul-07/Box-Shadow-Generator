@@ -7,10 +7,11 @@ import ContentCopyOutlinedIcon from "@mui/icons-material/ContentCopyOutlined";
 
 import Option from "../../components/common/option/Option";
 import AppLayout from "../../components/layout/AppLayout";
-import "../BoxShadow/BoxShadow.scss";
-import "./Border.scss";
 import FormSelect from "../../components/common/form/Select/Select";
 import { borderType } from "../../components/jsonData";
+
+import "./Border.scss";
+
 
 const Border = () => {
   const [color, setColor] = React.useState("#000000");
@@ -84,7 +85,7 @@ const Border = () => {
                       </Box>
                     </Form>
                   </Grid>
-                  <Grid item xs={7} className="right_column custom_colum">
+                  <Grid item xs={7} pl={5} className="right_column custom_colum">
                     <Box
                       className="display_box"
                       style={{ ...border(values), ...background }}

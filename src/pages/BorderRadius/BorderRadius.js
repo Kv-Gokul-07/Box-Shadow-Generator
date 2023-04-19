@@ -7,7 +7,6 @@ import ContentCopyOutlinedIcon from "@mui/icons-material/ContentCopyOutlined";
 
 import Option from "../../components/common/option/Option";
 import AppLayout from "../../components/layout/AppLayout";
-import "../BoxShadow/BoxShadow.scss";
 import "./BorderRadius.scss";
 
 const BorderRadius = () => {
@@ -78,7 +77,7 @@ const BorderRadius = () => {
                       </Box>
                     </Form>
                   </Grid>
-                  <Grid item xs={7} className="right_column custom_colum">
+                  <Grid item xs={7} pl={5} className="right_column custom_colum">
                     <Box
                       className="display_box"
                       style={{ ...borderRadius(values), ...backgroundColor}}

@@ -7,10 +7,11 @@ import ContentCopyOutlinedIcon from "@mui/icons-material/ContentCopyOutlined";
 
 import Option from "../../components/common/option/Option";
 import AppLayout from "../../components/layout/AppLayout";
-import "../BoxShadow/BoxShadow.scss";
-import "./LinearGradient.scss";
 import FormSelect from "../../components/common/form/Select/Select";
 import { orentation, Size, Position } from "../../components/jsonData";
+
+import "./LinearGradient.scss";
+
 
 const LinearGradient = () => {
   const [color, setColor] = React.useState("rgb(56, 217, 168)");
@@ -42,7 +43,7 @@ const LinearGradient = () => {
     <AppLayout>
       <section className="custom_section linearGradient_section">
         <Typography variant="h1" className="title">
-          Border Options
+          Linear Gradient
         </Typography>
         <Container>
           <Grid container className="grid_container">
@@ -154,7 +155,7 @@ const LinearGradient = () => {
                         />
                     </Form>
                   </Grid>
-                  <Grid item xs={7} className="right_column custom_colum">
+                  <Grid item xs={7} pl={5} className="right_column custom_colum">
                     <Box
                       className="display_box"
                       style={{

@@ -11,6 +11,24 @@ import { MuiColorInput } from "mui-color-input";
 const BoxShadow = () => {
   const [color, setColor] = React.useState("#000000");
 
+  function textLink() {
+    var elements = document.getElementsByClassName("paymentLink");
+
+    Array.from(elements).forEach(function(element) {
+        console.info(element)
+
+      // var selection = window.getSelection();
+      // var range = document.createRange();
+      // let dataToCopy = this.getElementsByClassName('.paymentLink');
+      // range.selectNodeContents(dataToCopy[0]);
+      // selection.removeAllRanges();
+      // selection.addRange(range);
+      // document.execCommand("Copy");
+      // window.getSelection().removeAllRanges()    
+    });
+    
+  }
+
   return (
     <AppLayout>
     <section className="custom_section">
@@ -43,7 +61,7 @@ const BoxShadow = () => {
                       </Box>
                   </Form>
                 </Grid>
-                <Grid item xs={7} className="right_column custom_colum">
+                <Grid item xs={7} pl={5} className="right_column custom_colum">
                   <Box className="display_box"
                   style={{
                     boxShadow: `${values.values.horizontal_range}px ${values.values.vertical_range}px ${values.values.blur_radius}px ${values.values.spread_radius}px ${color}`,
@@ -51,14 +69,14 @@ const BoxShadow = () => {
                    
                   </Box>
                   <Box
-                      className="result_content">
-                      <Typography variant="h6">
+                      className="result_content" onClick={() => textLink()}>
+                      <Typography variant="h6" id="paymentLink" className="paymentLink">
                         {`-webkit-box-shadow: ${values.values.horizontal_range}px ${values.values.vertical_range}px ${values.values.blur_radius}px ${values.values.spread_radius}px ${color};`}
                       </Typography>
-                      <Typography variant="h6">
+                      <Typography variant="h6" id="paymentLink" className="paymentLink">
                         {`-moz-box-shadow: ${values.values.horizontal_range}px ${values.values.vertical_range}px ${values.values.blur_radius}px ${values.values.spread_radius}px ${color};`}
                       </Typography>
-                      <Typography variant="h6">
+                      <Typography variant="h6" id="paymentLink" className="paymentLink">
                         {`box-shadow: ${values.values.horizontal_range}px ${values.values.vertical_range}px ${values.values.blur_radius}px ${values.values.spread_radius}px ${color};`}
                       </Typography>
                       <ContentCopyOutlinedIcon className="textCopy_icon icon_large" />

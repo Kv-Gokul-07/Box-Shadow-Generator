@@ -83,33 +83,81 @@ img {
   }
 }
 
+
 .custom_section {
-    .grid_container {
-        .custom_colum {
-            &.right_column {
-                flex-direction: column;
-                justify-content:flex-start;
-                align-items: center;
-                .result_content {
-                    margin-top: 10vh;
-                    min-height: 15vh;
-                    min-width: 500px;
-                    background-color: #ffffff;
-                    border-radius: 0.3125rem;
-                    border: 1px solid #000000;
-                    position: relative;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    padding: 0rem 2rem;
-                    .textCopy_icon {
-                        position: absolute;
-                        right: 20px;
-                        top: 10px;
-                    }
-                }
+  width: 100vw;
+  height: 100vh;
+  background-color: #f8fbff;
+  .grid_container {
+    margin-top: 5rem;
+    .custom_colum {
+      &.left_column {
+        padding: 2rem 2rem;
+        box-shadow: 0px 0px 10px 0px rgb(181, 181, 181);
+        border-radius: .3125rem;
+        height: 100%;
+        .slider_wrapper {
+          display: flex;
+          align-items: flex-start;
+          flex-direction: column;
+          margin-bottom: 2rem;
+          position: relative;
+          .slider_title {
+            width: 100%;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+            .slider_input {
+              width: 6.25rem;
+              display: flex;
+              align-items: flex-end;
+              span {
+                padding-left: .625rem;
+                font-size: 1.125rem;
+              }
             }
+          }
         }
-  
+      }
+      &.right_column {
+        display: flex;
+        flex-direction: column;
+        justify-content:flex-start;
+        align-items: center;
+        border-radius: 0.625rem;
+        .display_box {
+          z-index: 1;
+          background-color: rgb(195, 192, 186);
+          border-radius: 0.625rem;
+          width: 20rem;
+          height: 20rem;
+          padding: 2rem;
+          display: flex;
+          align-items: center;
+
+        }
+        .result_content {
+          min-width: 100%;
+          margin-top: 40px;
+          background-color: #ffffff;
+          border-radius: 0.3125rem;
+          border: 1px solid #000000;
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          padding: 2rem;
+          .textCopy_icon {
+            position: absolute;
+            right: 0.3125rem;
+            top: 0.625rem;
+          }
+          h6 {
+            line-height: 1.25rem;
+          }
+        }
+      }
     }
+  }
 }
