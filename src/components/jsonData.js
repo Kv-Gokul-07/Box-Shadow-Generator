@@ -44,59 +44,59 @@ export const navList = [
 export const cursorList = [
   {
     id: "1",
-    label: "alias",
-  },
-  {
-    id: "2",
-    label: "all-scroll",
-  },
-  {
-    id: "3",
     label: "auto",
   },
   {
-    id: "4",
-    label: "cell",
-  },
-  {
-    id: "5",
-    label: "context-menu",
-  },
-  {
-    id: "6",
-    label: "col-resize",
-  },
-  {
-    id: "7",
-    label: "copy",
-  },
-  {
-    id: "8",
-    label: "crosshair",
-  },
-  {
-    id: "9",
+    id: "2",
     label: "default",
   },
   {
+    id: "3",
+    label: "none",
+  },
+  {
+    id: "4",
+    label: "context-menu",
+  },
+  {
+    id: "5",
+    label: "help",
+  },
+  {
+    id: "6",
+    label: "pointer",
+  },
+  {
+    id: "7",
+    label: "progress",
+  },
+  {
+    id: "8",
+    label: "wait",
+  },
+  {
+    id: "9",
+    label: "cell",
+  },
+  {
     id: "10",
-    label: "e-resize",
+    label: "crosshair",
   },
   {
     id: "11",
-    label: "ew-resize",
+    label: "text",
   },
   {
     id: "12",
-    label: "grab",
+    label: "vertical-text",
   },
   {
     id: "13",
-    label: "grabbing",
+    label: "alias",
   },
   {
     id: "14",
-    label: "help",
+    label: "copy",
   },
   {
     id: "15",
@@ -104,96 +104,88 @@ export const cursorList = [
   },
   {
     id: "16",
-    label: "n-resize",
-  },
-  {
-    id: "17",
-    label: "ne-resize",
-  },
-  {
-    id: "18",
-    label: "nesw-resize",
-  },
-  {
-    id: "19",
-    label: "ns-resize",
-  },
-  {
-    id: "20",
-    label: "nw-resize",
-  },
-  {
-    id: "21",
-    label: "nw-resize",
-  },
-  {
-    id: "22",
-    label: "nwse-resize",
-  },
-  {
-    id: "23",
     label: "no-drop",
   },
   {
-    id: "24",
-    label: "none",
-  },
-  {
-    id: "25",
+    id: "17",
     label: "not-allowed",
   },
   {
-    id: "26",
-    label: "pointer",
+    id: "18",
+    label: "grab",
   },
   {
-    id: "27",
-    label: "progress",
+    id: "19",
+    label: "grabbing",
   },
   {
-    id: "28",
+    id: "20",
+    label: "all-scroll",
+  },
+  {
+    id: "21",
+    label: "col-resize",
+  },
+  {
+    id: "22",
     label: "row-resize",
+  },  
+  {
+    id: "23",
+    label: "n-resize",
   },
   {
-    id: "29",
+    id: "24",
+    label: "e-resize",
+  },
+  {
+    id: "25",
     label: "s-resize",
   },
   {
-    id: "30",
-    label: "se-resize",
-  },
-  {
-    id: "31",
-    label: "sw-resize",
-  },
-  {
-    id: "32",
-    label: "text",
-  },
-  {
-    id: "33",
-    label: "vertical-text",
-  },
-  {
-    id: "34",
+    id: "26",
     label: "w-resize",
   },
   {
-    id: "35",
-    label: "wait",
+    id: "27",
+    label: "ne-resize",
   },
   {
-    id: "36",
+    id: "28",
+    label: "nw-resize",
+  },
+  {
+    id: "29",
+    label: "se-resize",
+  },
+  {
+    id: "30",
+    label: "sw-resize",
+  },
+  {
+    id: "31",
+    label: "ew-resize",
+  },
+  {
+    id: "32",
+    label: "ns-resize",
+  },
+  {
+    id: "33",
+    label: "nesw-resize",
+  },
+  {
+    id: "34",
+    label: "nwse-resize",
+  },
+  {
+    id: "35",
     label: "zoom-in",
   },
   {
-    id: "37",
+    id: "36",
     label: "zoom-out",
-  },
-  {
-    id: "38",
-    label: "initial",
-  },
+  }
 ];
 
 

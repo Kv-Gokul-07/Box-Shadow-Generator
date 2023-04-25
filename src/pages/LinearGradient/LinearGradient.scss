@@ -1,14 +1,23 @@
 .linearGradient_section {
-    .grid_container {
-        .custom_colum {
-            &.right_column {
-                padding-left: 2rem;
-                .display_box {
-                    width: 100%;
-                    height: 15rem;
-                }
+  .grid_container {
+    .custom_colum {
+      &.left_column {
+        .slider_wrapper {
+          .slider_title {
+            .custom_slider_input {
+              width: 12.5rem;
             }
+          }
         }
+      }
 
+      &.right_column {
+        padding-left: 2rem;
+        .display_box {
+          width: 100%;
+          height: 15rem;
+        }
+      }
     }
+  }
 }

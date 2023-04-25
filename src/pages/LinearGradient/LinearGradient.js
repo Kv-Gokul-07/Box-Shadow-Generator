@@ -11,6 +11,7 @@ import FormSelect from "../../components/common/form/Select/Select";
 import { orentation, Size, Position } from "../../components/jsonData";
 
 import "./LinearGradient.scss";
+import { textCopyFunc } from "../../components/common/Utils";
 
 
 const LinearGradient = () => {
@@ -64,7 +65,7 @@ const LinearGradient = () => {
                       <Box className="slider_wrapper">
                         <Box className="slider_title">
                           <Typography variant="h5">Size</Typography>
-                          <Box className="slider_input">
+                          <Box className="slider_input custom_slider_input">
                             <Field
                               name="orientation_type"
                               dropDownIon="keyboardArrow"
@@ -93,7 +94,7 @@ const LinearGradient = () => {
                           <Box className="slider_wrapper">
                             <Box className="slider_title">
                               <Typography variant="h5">Position</Typography>
-                              <Box className="slider_input">
+                              <Box className="slider_input custom_slider_input">
                                 <Field
                                   name="linear_size"
                                   dropDownIon="keyboardArrow"
@@ -108,7 +109,7 @@ const LinearGradient = () => {
                           <Box className="slider_wrapper">
                             <Box className="slider_title">
                               <Typography variant="h5">Orientation</Typography>
-                              <Box className="slider_input">
+                              <Box className="slider_input custom_slider_input">
                                 <Field
                                   name="linear_position"
                                   dropDownIon="keyboardArrow"
@@ -162,11 +163,11 @@ const LinearGradient = () => {
                         background: gradientType(values),
                       }}
                     ></Box>
-                    <Box className="result_content">
+                    <Box className="result_content" id="result_text">
                       <Typography variant="h6">
-                        background: {gradientType(values)}
+                        background: {gradientType(values)};
                       </Typography>
-                      <ContentCopyOutlinedIcon className="textCopy_icon icon_large" />
+                      <ContentCopyOutlinedIcon onClick={ () => textCopyFunc("result_text") } className="textCopy_icon icon_large" />
                     </Box>
                   </Grid>
                 </>

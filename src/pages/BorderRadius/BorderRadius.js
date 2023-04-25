@@ -8,6 +8,7 @@ import ContentCopyOutlinedIcon from "@mui/icons-material/ContentCopyOutlined";
 import Option from "../../components/common/option/Option";
 import AppLayout from "../../components/layout/AppLayout";
 import "./BorderRadius.scss";
+import { textCopyFunc } from "../../components/common/Utils";
 
 const BorderRadius = () => {
   const [color, setColor] = React.useState("#000000");
@@ -82,7 +83,7 @@ const BorderRadius = () => {
                       className="display_box"
                       style={{ ...borderRadius(values), ...backgroundColor}}
                     ></Box>
-                    <Box className="result_content">
+                    <Box className="result_content" id="result_text">
                       <Typography variant="h6">
                         {`-webkit-border-radius: ${values.values.topLeft_Radius}px ${values.values.topRight_Radius}px ${values.values.bottomLeft_Radius}px ${values.values.bottomRight_Radius}px;`}
                       </Typography>
@@ -92,7 +93,7 @@ const BorderRadius = () => {
                       <Typography variant="h6">
                         {`border-radius: ${values.values.topLeft_Radius}px ${values.values.topRight_Radius}px ${values.values.bottomLeft_Radius}px ${values.values.bottomRight_Radius}px;`}
                       </Typography>
-                      <ContentCopyOutlinedIcon className="textCopy_icon icon_large" />
+                      <ContentCopyOutlinedIcon onClick={ () => textCopyFunc("result_text") } className="textCopy_icon icon_large" />
                     </Box>
                   </Grid>
                 </>

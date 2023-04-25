@@ -7,27 +7,10 @@ import Option from "../../components/common/option/Option";
 import "./BoxShadow.scss";
 import AppLayout from "../../components/layout/AppLayout";
 import { MuiColorInput } from "mui-color-input";
+import { textCopyFunc } from "../../components/common/Utils";
 
 const BoxShadow = () => {
   const [color, setColor] = React.useState("#000000");
-
-  function textLink() {
-    var elements = document.getElementsByClassName("paymentLink");
-
-    Array.from(elements).forEach(function(element) {
-        console.info(element)
-
-      // var selection = window.getSelection();
-      // var range = document.createRange();
-      // let dataToCopy = this.getElementsByClassName('.paymentLink');
-      // range.selectNodeContents(dataToCopy[0]);
-      // selection.removeAllRanges();
-      // selection.addRange(range);
-      // document.execCommand("Copy");
-      // window.getSelection().removeAllRanges()    
-    });
-    
-  }
 
   return (
     <AppLayout>
@@ -69,7 +52,7 @@ const BoxShadow = () => {
                    
                   </Box>
                   <Box
-                      className="result_content" onClick={() => textLink()}>
+                      className="result_content" id="result_text" >
                       <Typography variant="h6" id="paymentLink" className="paymentLink">
                         {`-webkit-box-shadow: ${values.values.horizontal_range}px ${values.values.vertical_range}px ${values.values.blur_radius}px ${values.values.spread_radius}px ${color};`}
                       </Typography>
@@ -79,7 +62,7 @@ const BoxShadow = () => {
                       <Typography variant="h6" id="paymentLink" className="paymentLink">
                         {`box-shadow: ${values.values.horizontal_range}px ${values.values.vertical_range}px ${values.values.blur_radius}px ${values.values.spread_radius}px ${color};`}
                       </Typography>
-                      <ContentCopyOutlinedIcon className="textCopy_icon icon_large" />
+                      <ContentCopyOutlinedIcon onClick={ () => textCopyFunc("result_text") } className="textCopy_icon icon_large" />
                     </Box>
                 </Grid>
               </>

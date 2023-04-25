@@ -9,6 +9,7 @@ import AppLayout from "../../components/layout/AppLayout";
 import { MuiColorInput } from "mui-color-input";
 
 import "./TextShadow.scss";
+import { textCopyFunc } from "../../components/common/Utils";
 
 const TextShadow = () => {
   const [color, setColor] = React.useState("#121212");
@@ -75,11 +76,11 @@ const TextShadow = () => {
                         </Typography>
                       </Box>
                     </Box>
-                    <Box className="result_content">
+                    <Box className="result_content" id="result_text">
                         <Typography variant="h6">
                           {`text-shadow: ${values.values.text_horizontal_shadow}px ${values.values.text_vertical_shadow}px ${values.values.text_blur_radius}px ${color};`}
                         </Typography>
-                        <ContentCopyOutlinedIcon className="textCopy_icon icon_large" />
+                        <ContentCopyOutlinedIcon onClick={ () => textCopyFunc("result_text") } className="textCopy_icon icon_large" />
                       </Box>
                   </Grid>
                 </>

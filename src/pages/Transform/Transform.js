@@ -8,6 +8,7 @@ import Option from "../../components/common/option/Option";
 import AppLayout from "../../components/layout/AppLayout";
 import "../BoxShadow/BoxShadow.scss";
 import "./Transform.scss";
+import { textCopyFunc } from "../../components/common/Utils";
 
 const Transform = () => {
   // let border = (values) => {
@@ -86,7 +87,7 @@ const Transform = () => {
                         transform: `rotate(${values.values.transform_rotate}deg) scale(${values.values.transform_scale}) skew(${values.values.transform_skew}deg) translate(${values.values.transform_translateX}px) translatex(${values.values.transform_translateY}px) translatey(${values.values.transform_translateY}px)`,
                       }}
                     ></Box>
-                    <Box className="result_content">
+                    <Box className="result_content" id="result_text" >
                       <Typography variant="h6">
                         {`-webkit-transform: rotate(${values.values.transform_rotate}deg) scale(${values.values.transform_scale}) skew(${values.values.transform_skew}deg) translatex(${values.values.transform_translateX}px) translatey(${values.values.transform_translateY}px);`}
                       </Typography>
@@ -96,7 +97,7 @@ const Transform = () => {
                       <Typography variant="h6">
                         {`transform: rotate(${values.values.transform_rotate}) rotate(${values.values.transform_rotate}deg) scale(${values.values.transform_scale}) skew(${values.values.transform_skew}deg) translatex(${values.values.transform_translateX}px) translatey(${values.values.transform_translateY}px);`}
                       </Typography>
-                      <ContentCopyOutlinedIcon className="textCopy_icon icon_large" />
+                      <ContentCopyOutlinedIcon onClick={ () => textCopyFunc("result_text") }  className="textCopy_icon icon_large" />
                     </Box>
                   </Grid>
                 </>

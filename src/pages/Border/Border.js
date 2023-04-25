@@ -9,6 +9,7 @@ import Option from "../../components/common/option/Option";
 import AppLayout from "../../components/layout/AppLayout";
 import FormSelect from "../../components/common/form/Select/Select";
 import { borderType } from "../../components/jsonData";
+import { textCopyFunc } from "../../components/common/Utils";
 
 import "./Border.scss";
 
@@ -26,6 +27,15 @@ const Border = () => {
   let background = {
     backgroundColor: backgroundColor,
   };
+
+  //   function textLink() {
+  //   const r = document.createRange();
+  //   r.selectNode(document.getElementById("paymentLink"));
+  //   window.getSelection().removeAllRanges();
+  //   window.getSelection().addRange(r);
+  //   document.execCommand("copy");
+  //   window.getSelection().removeAllRanges();
+  // }
 
   return (
     <AppLayout>
@@ -90,17 +100,17 @@ const Border = () => {
                       className="display_box"
                       style={{ ...border(values), ...background }}
                     ></Box>
-                    <Box className="result_content">
+                    <Box className="result_content" id="result_text">
                       <Typography variant="h6">
-                        {`-webkit-border: ${values.values.border_width}px ${values.values.border_type} ${color}`}
+                        {`-webkit-border: ${values.values.border_width}px ${values.values.border_type} ${color};`}
                       </Typography>
                       <Typography variant="h6">
-                        {`-moz-border: ${values.values.border_width}px ${values.values.border_type} ${color}`}
+                        {`-moz-border: ${values.values.border_width}px ${values.values.border_type} ${color};`}
                       </Typography>
                       <Typography variant="h6">
-                        {`border: ${values.values.border_width}px ${values.values.border_type} ${color}`}
+                        {`border: ${values.values.border_width}px ${values.values.border_type} ${color};`}
                       </Typography>
-                      <ContentCopyOutlinedIcon className="textCopy_icon icon_large" />
+                      <ContentCopyOutlinedIcon onClick={ () => textCopyFunc("result_text") } className="textCopy_icon icon_large" />
                     </Box>
                   </Grid>
                 </>

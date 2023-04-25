@@ -7,6 +7,7 @@ import ContentCopyOutlinedIcon from "@mui/icons-material/ContentCopyOutlined";
 import Option from "../../components/common/option/Option";
 import AppLayout from "../../components/layout/AppLayout";
 import "./ColorOptions.scss";
+import { textCopyFunc } from "../../components/common/Utils";
 
 const ColorOptions = () => {
   function componentToHex(c) {
@@ -68,7 +69,12 @@ const ColorOptions = () => {
                       />
                     </Form>
                   </Grid>
-                  <Grid item xs={7} pl={5}  className="right_column custom_colum">
+                  <Grid
+                    item
+                    xs={7}
+                    pl={5}
+                    className="right_column custom_colum"
+                  >
                     <Box className="subColumn_wrapper">
                       <Box
                         className="display_box"
@@ -90,27 +96,37 @@ const ColorOptions = () => {
                     </Box>
 
                     <Box className="resultContent_wrapper">
-                      <Box className="result_content">
+                      <Box className="result_content" id="result_text">
                         <Typography variant="h6">
-                          {`RGB(${values.values.red_option}, ${values.values.green_option}, ${values.values.blue_option})`}
+                          {`RGB(${values.values.red_option}, ${values.values.green_option}, ${values.values.blue_option});`}
                         </Typography>
-                        <ContentCopyOutlinedIcon className="textCopy_icon icon_large" />
+                        <ContentCopyOutlinedIcon
+                          className="textCopy_icon icon_large"
+                          onClick={() => textCopyFunc("result_text")}
+                        />
                       </Box>
-                      <Box className="result_content">
+                      <Box className="result_content" id="result_text">
                         <Typography variant="h6">
-                          {`RGBA(${values.values.red_option}, ${values.values.green_option}, ${values.values.blue_option}, ${values.values.opacity_option})`}
+                          {`RGBA(${values.values.red_option}, ${values.values.green_option}, ${values.values.blue_option}, ${values.values.opacity_option});`}
                         </Typography>
-                        <ContentCopyOutlinedIcon className="textCopy_icon icon_large" />
+                        <ContentCopyOutlinedIcon
+                          className="textCopy_icon icon_large"
+                          onClick={() => textCopyFunc("result_text")}
+                        />
                       </Box>{" "}
-                      <Box className="result_content">
+                      <Box className="result_content" id="result_text">
                         <Typography variant="h6">
                           {rgbToHex(
                             values.values.red_option,
                             values.values.green_option,
                             values.values.blue_option
                           )}
+                          ;
                         </Typography>
-                        <ContentCopyOutlinedIcon className="textCopy_icon icon_large" />
+                        <ContentCopyOutlinedIcon
+                          onClick={() => textCopyFunc("result_text")}
+                          className="textCopy_icon icon_large"
+                        />
                       </Box>
                     </Box>
                   </Grid>

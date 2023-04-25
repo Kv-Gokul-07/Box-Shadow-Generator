@@ -5,6 +5,7 @@ import ContentCopyOutlinedIcon from "@mui/icons-material/ContentCopyOutlined";
 import { cursorList } from "../../components/jsonData";
 import AppLayout from "../../components/layout/AppLayout";
 import "./CssCursor.scss";
+import { textCopyFunc } from "../../components/common/Utils";
 
 const CssCursor = () => {
 
@@ -17,9 +18,9 @@ const CssCursor = () => {
         <Typography variant="h1" className="title">
           CSS Cursor Demonstrator and Generator
         </Typography>
-        <Box className="result_content">
+        <Box className="result_content" id="result_text">
           <Typography variant="h5">cursor: {cursorValue};</Typography>
-          <ContentCopyOutlinedIcon className="textCopy_icon icon_large" />
+          <ContentCopyOutlinedIcon onClick={ () => textCopyFunc("result_text") } className="textCopy_icon icon_large" />
         </Box>
         <Container>
         <Box sx={{ display: 'flex', alignItems: 'center', justifyContent:"space-between" }} className="cursor_list">
