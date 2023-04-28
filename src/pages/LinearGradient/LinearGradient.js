@@ -168,6 +168,7 @@ const LinearGradient = () => {
                         background: {gradientType(values)};
                       </Typography>
                       <ContentCopyOutlinedIcon onClick={ () => textCopyFunc("result_text") } className="textCopy_icon icon_large" />
+                      <Box className="success_message" id="success_message">Text copied Successfully</Box>
                     </Box>
                   </Grid>
                 </>

@@ -104,6 +104,7 @@ const ColorOptions = () => {
                           className="textCopy_icon icon_large"
                           onClick={() => textCopyFunc("result_text")}
                         />
+                        <Box className="success_message" id="success_message">Text copied Successfully</Box>
                       </Box>
                       <Box className="result_content" id="result_text">
                         <Typography variant="h6">
@@ -113,6 +114,7 @@ const ColorOptions = () => {
                           className="textCopy_icon icon_large"
                           onClick={() => textCopyFunc("result_text")}
                         />
+                        <Box className="success_message" id="success_message">Text copied Successfully</Box>
                       </Box>{" "}
                       <Box className="result_content" id="result_text">
                         <Typography variant="h6">
@@ -127,6 +129,7 @@ const ColorOptions = () => {
                           onClick={() => textCopyFunc("result_text")}
                           className="textCopy_icon icon_large"
                         />
+                        <Box className="success_message" id="success_message">Text copied Successfully</Box>
                       </Box>
                     </Box>
                   </Grid>

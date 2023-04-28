@@ -111,6 +111,7 @@ const Border = () => {
                         {`border: ${values.values.border_width}px ${values.values.border_type} ${color};`}
                       </Typography>
                       <ContentCopyOutlinedIcon onClick={ () => textCopyFunc("result_text") } className="textCopy_icon icon_large" />
+                    <Box className="success_message" id="success_message">Text copied Successfully</Box>
                     </Box>
                   </Grid>
                 </>

@@ -10,7 +10,18 @@ import { MuiColorInput } from "mui-color-input";
 import { textCopyFunc } from "../../components/common/Utils";
 
 const BoxShadow = () => {
-  const [color, setColor] = React.useState("#000000");
+  const [color, setColor] = React.useState("rgb(0, 0, 0)");
+  const [bgColor, setBgColor] = React.useState("rgb(198, 198, 198)");
+
+  let borderRadius = (values) => {
+    return {
+      boxShadow: `${values.values.horizontal_range}px ${values.values.vertical_range}px ${values.values.blur_radius}px ${values.values.spread_radius}px ${color}`,
+    };
+  };
+
+  let backgroundColor = {
+    backgroundColor: `${bgColor}`,
+  };
 
   return (
     <AppLayout>
@@ -39,17 +50,18 @@ const BoxShadow = () => {
                     <Option label="Blur Radius" name="blur_radius" min={-200} max={200} step={1}/>
                     <Option label="Spread Radius" name="spread_radius" min={-200} max={200} step={1}/>
                     <Box className="colorPicker_wrapper">
-                        <Typography typography="h5">Background Color</Typography>
+                        <Typography typography="h5">Box-Shadow Color</Typography>
                         <MuiColorInput value={color} onChange={(color) => setColor(color)} />
+                      </Box>
+                      <Box className="colorPicker_wrapper">
+                        <Typography typography="h5">Background Color</Typography>
+                        <MuiColorInput value={bgColor} onChange={(bgColor) => setBgColor(bgColor)} />
                       </Box>
                   </Form>
                 </Grid>
                 <Grid item xs={7} pl={5} className="right_column custom_colum">
                   <Box className="display_box"
-                  style={{
-                    boxShadow: `${values.values.horizontal_range}px ${values.values.vertical_range}px ${values.values.blur_radius}px ${values.values.spread_radius}px ${color}`,
-                  }}>
-                   
+                    style={{ ...borderRadius(values), ...backgroundColor}} >    
                   </Box>
                   <Box
                       className="result_content" id="result_text" >
@@ -63,6 +75,7 @@ const BoxShadow = () => {
                         {`box-shadow: ${values.values.horizontal_range}px ${values.values.vertical_range}px ${values.values.blur_radius}px ${values.values.spread_radius}px ${color};`}
                       </Typography>
                       <ContentCopyOutlinedIcon onClick={ () => textCopyFunc("result_text") } className="textCopy_icon icon_large" />
+                      <Box className="success_message" id="success_message">Text copied Successfully</Box>
                     </Box>
                 </Grid>
               </>

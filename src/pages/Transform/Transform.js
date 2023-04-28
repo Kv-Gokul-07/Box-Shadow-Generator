@@ -98,6 +98,7 @@ const Transform = () => {
                         {`transform: rotate(${values.values.transform_rotate}) rotate(${values.values.transform_rotate}deg) scale(${values.values.transform_scale}) skew(${values.values.transform_skew}deg) translatex(${values.values.transform_translateX}px) translatey(${values.values.transform_translateY}px);`}
                       </Typography>
                       <ContentCopyOutlinedIcon onClick={ () => textCopyFunc("result_text") }  className="textCopy_icon icon_large" />
+                      <Box className="success_message" id="success_message">Text copied Successfully</Box>
                     </Box>
                   </Grid>
                 </>

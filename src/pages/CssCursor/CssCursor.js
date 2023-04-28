@@ -21,6 +21,7 @@ const CssCursor = () => {
         <Box className="result_content" id="result_text">
           <Typography variant="h5">cursor: {cursorValue};</Typography>
           <ContentCopyOutlinedIcon onClick={ () => textCopyFunc("result_text") } className="textCopy_icon icon_large" />
+          <Box className="success_message" id="success_message">Text copied Successfully</Box>
         </Box>
         <Container>
         <Box sx={{ display: 'flex', alignItems: 'center', justifyContent:"space-between" }} className="cursor_list">

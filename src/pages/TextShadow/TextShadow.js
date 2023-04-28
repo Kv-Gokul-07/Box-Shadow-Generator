@@ -81,6 +81,7 @@ const TextShadow = () => {
                           {`text-shadow: ${values.values.text_horizontal_shadow}px ${values.values.text_vertical_shadow}px ${values.values.text_blur_radius}px ${color};`}
                         </Typography>
                         <ContentCopyOutlinedIcon onClick={ () => textCopyFunc("result_text") } className="textCopy_icon icon_large" />
+                        <Box className="success_message" id="success_message">Text copied Successfully</Box>
                       </Box>
                   </Grid>
                 </>

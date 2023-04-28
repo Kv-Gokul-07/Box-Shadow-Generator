@@ -72,11 +72,18 @@ img {
       width: 200px;
       .MuiInputBase-root {
         height: 30px;
+        border: 1px solid rgb(206, 212, 220);
+        &:hover {
+          border: 1px solid rgb(206, 212, 220);
+        }
         .MuiInputAdornment-root {
           button {
             width: 20px;
             height: 20px;
           }
+        }
+        fieldset {
+          border-color: transparent;
         }
       }
     }
@@ -153,6 +160,22 @@ img {
             position: absolute;
             right: 0.3125rem;
             top: 0.625rem;
+          }
+          .success_message {
+            display: none;
+            position: absolute;
+            right: 0px;
+            bottom: -40px;
+            background-color: #ffffff;
+            border: 1px solid green;
+            padding: 5px 1rem;
+            border-radius: .3125rem;
+            color: green;
+            transition: 2s;
+            &.active {
+              display: block;
+              transition: 2s;
+            }
           }
           h6 {
             line-height: 1.25rem;

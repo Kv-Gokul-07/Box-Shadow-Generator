@@ -1,43 +1,43 @@
 export const navList = [
   {
     id: "1",
-    label: "Box Shadow",
+    label: "Border",
     path: "/",
   },
   {
     id: "2",
-    label: "Text Shadow",
-    path: "/text-Shadow",
-  },
-  {
-    id: "3",
-    label: "CSS Cursor",
-    path: "/css-cursor",
-  },
-  {
-    id: "4",
     label: "Border Radius",
     path: "/border-radius",
   },
   {
+    id: "3",
+    label: "Box Shadow",
+    path: "/box-shadow",
+  },
+  {
+    id: "4",
+    label: "Color Options",
+    path: "/color-options",
+  },
+  {
     id: "5",
-    label: "Border",
-    path: "/border",
+    label: "CSS Cursor",
+    path: "/css-cursor",
   },
   {
     id: "6",
-    label: "Transform",
-    path: "/transform",
-  },
-  {
-    id: "7",
     label: "Linear Gradient",
     path: "/linear-gradient",
   },
   {
+    id: "7",
+    label: "Text Shadow",
+    path: "/text-Shadow",
+  },
+  {
     id: "8",
-    label: "Color Options",
-    path: "/color-options",
+    label: "Transform",
+    path: "/transform",
   }
 ];
 

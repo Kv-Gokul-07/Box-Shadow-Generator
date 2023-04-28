@@ -94,6 +94,7 @@ const BorderRadius = () => {
                         {`border-radius: ${values.values.topLeft_Radius}px ${values.values.topRight_Radius}px ${values.values.bottomLeft_Radius}px ${values.values.bottomRight_Radius}px;`}
                       </Typography>
                       <ContentCopyOutlinedIcon onClick={ () => textCopyFunc("result_text") } className="textCopy_icon icon_large" />
+                      <Box className="success_message" id="success_message">Text copied Successfully</Box>
                     </Box>
                   </Grid>
                 </>
